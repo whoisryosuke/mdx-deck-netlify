@@ -1,9 +1,27 @@
-import { Head } from 'mdx-deck'
+import { Appear, Head } from 'mdx-deck'
+import { FullScreenCode, Invert, Split } from 'mdx-deck/layouts'
 
 export { default as theme } from './theme'
 
 <Head>
   <title>Presentation Title</title>
+  <meta itemprop="name" content="Presentation Title" />
+  <meta itemprop="description" content="Presentation description" />
+  <meta itemprop="image" content="https://pbs.twimg.com/profile_images/979408111868952576/yq2IUoGt_bigger.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@whoisryosuke" />
+  <meta name="twitter:title" content="Presentation Title" />
+  <meta name="twitter:description" content="Presentation description" />
+  <meta name="twitter:image" content="https://pbs.twimg.com/profile_images/979408111868952576/yq2IUoGt_bigger.jpg" />
+  <meta property="og:title" content="Presentation Title" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="http://www.example.com/" />
+  <meta property="og:image" content="https://pbs.twimg.com/profile_images/979408111868952576/yq2IUoGt_bigger.jpg" />
+  <meta property="og:description" content="Presentation description" />
+  <meta property="og:site_name" content="Presentation Title" />
+  <meta property="article:published_time" content="2013-09-17T05:59:00+01:00" />
+  <meta property="article:modified_time" content="2013-09-16T19:08:47+01:00" />
+  <meta property="article:section" content="Article Section (React? Design?)" />
 </Head>
 
 # Hello
@@ -21,3 +39,47 @@ To create your presentation
 ---
 
 <https://github.com/jxnblk/mdx-deck>
+
+
+---
+
+## Text appears when you activate next slide
+
+<ul>
+  <Appear>
+    <li>One</li>
+    <li>Two</li>
+    <li>Three</li>
+  </Appear>
+</ul>
+
+Go backwards to hide text again
+
+---
+
+export default Invert
+
+# Inverted BG
+
+---
+
+export default Split
+
+```js
+const code = {
+  example: [
+    'one',
+    'two'
+  ]
+}
+```
+
+## Split layout
+
+---
+
+export default FullScreenCode
+
+```jsx
+<Button>Beep</Button>
+```

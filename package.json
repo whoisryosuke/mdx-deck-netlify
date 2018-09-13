@@ -14,5 +14,8 @@
   "license": "MIT",
   "devDependencies": {
     "mdx-deck": "^1.6.7"
+  },
+  "dependencies": {
+    "react-syntax-highlighter": "^8.0.1"
   }
 }

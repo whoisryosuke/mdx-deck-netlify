@@ -1,5 +1,6 @@
 import { Appear, Head } from 'mdx-deck'
 import { FullScreenCode, Invert, Split } from 'mdx-deck/layouts'
+import { CodeSurfer } from "mdx-deck-code-surfer"
 
 export { default as theme } from './theme'
 
@@ -80,6 +81,16 @@ const code = {
 
 export default FullScreenCode
 
-```jsx
-<Button>Beep</Button>
-```
+<CodeSurfer
+  title="Full screen code example"
+  notes="Code description text"
+  code={require("!raw-loader!./examples/example.js")}
+  lang="javascript"
+  showNumbers={false}
+  dark={false}
+  steps={[
+    { lines: [3], notes: "Note for the first step" },
+    { range: [2, 3] },
+    { tokens: { 1: [1, 2, 3] }, notes: "Note for the third step" }
+  ]}
+/>

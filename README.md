@@ -10,6 +10,7 @@ A basic boilerplate to use with [mdx-deck](https://github.com/jxnblk/mdx-deck) w
 Swap to different themes and configurations by building feature branches (or checkout + merge with production branch).
 
 * [⚫ Dark theme](https://github.com/whoisryosuke/mdx-deck-netlify/tree/feat/dark-theme)
+* [🌈 Syntax Highlighting with Theming](https://github.com/whoisryosuke/mdx-deck-netlify/tree/feat/syntax-highlight)
 
 ## Development
 

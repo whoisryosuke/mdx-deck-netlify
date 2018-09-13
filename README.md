@@ -69,3 +69,7 @@ Go to your Deploy Settings (under the Deploys tab in your Netlify project/repo) 
 We give Netlify a build script to run each time we make a commit to the repo. And the deploy folder is the place where mdx-deck exports the static HTML/JS version, and by pointing Netlify there it displays our deck after building.
 
 [See the demo site here](https://dazzling-kepler-4cc40d.netlify.com/)
+
+## Credits
+
+* [mdx-deck](https://github.com/jxnblk/mdx-deck) by [@jxnblk](https://github.com/jxnblk)

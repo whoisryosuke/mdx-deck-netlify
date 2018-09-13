@@ -1,3 +1,4 @@
+![Example of the slide deck in action](./thumbnail3.gif)
 
 # mdx-deck Template
 

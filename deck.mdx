@@ -1,8 +1,9 @@
 import { Appear, Head } from 'mdx-deck'
 import { FullScreenCode, Invert, Split } from 'mdx-deck/layouts'
 import { CodeSurfer } from "mdx-deck-code-surfer"
+import nightOwl from "prism-react-renderer/themes/nightOwl"
 
-export { default as theme } from './theme'
+export { dark as theme } from 'mdx-deck/themes'
 
 <Head>
   <title>Presentation Title</title>
@@ -25,13 +26,14 @@ export { default as theme } from './theme'
   <meta property="article:section" content="Article Section (React? Design?)" />
 </Head>
 
-# Hello
+# mdx-deck boilerplate
 
 ---
 
 ## Edit this file
 
 To create your presentation
+it's easy
 
 ```notes
 - Create speaker notes in fenced code blocks
@@ -66,31 +68,38 @@ export default Invert
 
 export default Split
 
-```js
-const code = {
+<CodeSurfer
+  code={`const code = {
   example: [
     'one',
     'two'
   ]
-}
-```
+}`}
+  lang="javascript"
+  showNumbers={false}
+  dark={false}
+  steps={[
+    { lines: [1], notes: "Note for the first step" },
+    { range: [3, 4] },
+    { tokens: { 3: [1, 2, 3] }, notes: "Note for the third step" }
+  ]}
+/>
 
 ## Split layout
 
 ---
 
-export default FullScreenCode
-
 <CodeSurfer
   title="Full screen code example"
-  notes="Code description text"
+  notes="Complete with themes (like Night Owl)"
   code={require("!raw-loader!./examples/example.js")}
   lang="javascript"
   showNumbers={false}
+  theme={nightOwl}
   dark={false}
   steps={[
-    { lines: [3], notes: "Note for the first step" },
-    { range: [2, 3] },
+    { lines: [1], notes: "Note for the first step" },
+    { range: [1, 2] },
     { tokens: { 1: [1, 2, 3] }, notes: "Note for the third step" }
   ]}
 />

@@ -14,5 +14,9 @@
   "license": "MIT",
   "devDependencies": {
     "mdx-deck": "^1.6.7"
+  },
+  "dependencies": {
+    "mdx-deck-code-surfer": "^0.4.1",
+    "raw-loader": "^0.5.1"
   }
 }

@@ -1,7 +1,9 @@
 import { Appear, Head } from 'mdx-deck'
 import { FullScreenCode, Invert, Split } from 'mdx-deck/layouts'
+import SyntaxHighlighter from 'react-syntax-highlighter/prism';
+import { atomDark } from 'react-syntax-highlighter/styles/prism';
 
-export { default as theme } from './theme'
+export { dark as theme } from 'mdx-deck/themes'
 
 <Head>
   <title>Presentation Title</title>
@@ -65,21 +67,39 @@ export default Invert
 
 export default Split
 
-```js
-const code = {
-  example: [
-    'one',
-    'two'
-  ]
-}
-```
+<SyntaxHighlighter language='javascript' style={atomDark} customStyle={{minWidth:"500px"}}>
+  {`const code = {
+    example: [
+      'one',
+      'two'
+    ]
+  }`}
+</SyntaxHighlighter>
 
 ## Split layout
 
 ---
 
+## Code Example
+
+<SyntaxHighlighter language='javascript' style={atomDark} customStyle={{minWidth:"500px"}}>
+  {`const code = {
+    example: [
+      'one',
+      'two'
+    ]
+  }`}
+</SyntaxHighlighter>
+
+---
+
 export default FullScreenCode
 
-```jsx
-<Button>Beep</Button>
-```
+<SyntaxHighlighter language='javascript' style={atomDark} customStyle={{width:"100%"}}>
+  {`const code = {
+    example: [
+      'one',
+      'two'
+    ]
+  }`}
+</SyntaxHighlighter>
